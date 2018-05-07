@@ -136,3 +136,20 @@ img.exams {
   color: white;
   margin-bottom: 1rem;
 }
+
+/* Footer */
+.footer {
+  position: relative;
+  top: 11rem;
+  display: flex;
+  align-items: center;
+  background-color: azure;
+}
+
+.footer img {
+  height: 1.5rem;
+  margin-right: 1rem;
+  margin-bottom: 4rem;
+  margin-left: 4rem;
+  margin-top: 4rem;
+}
