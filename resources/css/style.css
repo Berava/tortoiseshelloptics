@@ -61,9 +61,8 @@ li {
 .headline {
   position: relative;
   top: 10rem;
-  text-align: right;
-  position: relative;
   left: 2rem;
+  text-align: right;
 }
 
 .headline span {
@@ -152,4 +151,35 @@ img.exams {
   margin-bottom: 4rem;
   margin-left: 4rem;
   margin-top: 4rem;
+}
+
+/* Media query for tablet */
+
+@media only screen and (max-width: 1035px) {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .main-banner {
+    height: 22rem;
+    top:0px;
+  }
+
+  .headline {
+    top: 5rem;
+    left: 0rem;
+  }
+
+  .headline span {
+    font-size: 1.33rem;
+    padding: 0.75rem 4rem;
+    background-color: white;
+    position: relative;
+    right: 2rem;
+  }
+
+  .business {
+    justify-content: center;
+  }
 }
