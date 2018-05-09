@@ -7,6 +7,10 @@ body {
   line-height: 1.4;
 }
 
+.menu-mobile {
+  display: none;
+}
+
 .container {
   width: 960px;
   margin: 0 auto;
@@ -181,5 +185,125 @@ img.exams {
 
   .business {
     justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .service {
+    margin-right: 2rem;
+  }
+
+}
+
+/* Media query between tablet and mobile */
+
+@media only screen and (max-width: 620px) {
+  .menu-desktop {
+    display: none;
+  }
+
+  .menu-mobile {
+    display: block;
+  }
+
+  .title {
+    display: none;
+  }
+}
+
+/* Media query for mobile */
+
+@media only screen and (max-width: 564px) {
+
+  .home {
+    background-position: 20%;
+    width: 100%;
+  }
+
+  .main-banner {
+    height: 17rem;
+    top:0px;
+  }
+
+  .headline {
+    top: 9rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  .headline span {
+    font-size: 1rem;
+    text-align: center;
+    padding: 1rem 0;
+    right: 0;
+    display: block;
+  }
+
+  .services {
+    position: relative;
+    top: 3.77rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service {
+    margin-right: 0;
+    margin-top: 1.54rem;
+    justify-content: space-around;
+  }
+
+  .services .service:first-child {
+    margin-top: 0;
+  }
+
+  .business {
+    position: relative;
+    top: 7.54rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .column {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .business .column:first-child {
+    margin-right:0;
+  }
+
+  .business .column:last-child {
+    position: relative;
+    top: 4rem;
+  }
+
+  .column span {
+    width: 100%;
+    color: white;
+    margin-bottom: 1rem;
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .column p {
+      font-size: 0.77rem;
+  }
+
+  .footer {
+    top: 14.77rem;
+    justify-content: center;
+  }
+
+  .footer img {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .footer p {
+    display: none;
   }
 }
